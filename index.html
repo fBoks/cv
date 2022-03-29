@@ -3,70 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Ruslan CV</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="200" alt="Моё фото здесь" />
-            </td>
-            <td>
-                <h1>Ахмадышев Руслан</h1>
+    <div class="container">
+        <div class="info">
+            
+            <img src="avatar.jpg" alt="Моё фото здесь" class="avatar" />
+
+            <div class="info-text">
+                <h1 class="name-surname">Ахмадышев Руслан</h1>
                 <p>
                     Я обучаюсь на первом курсе ПХТТ по специальности Информационные системы и программирование.<br />
-                    <em>В данный момент изучаю <strong>C#</strong>.</em>
+                    В данный момент изучаю <strong>C#</strong>.
                 </p>
                 <p>
                     Я люблю заниматься спортом, программировать и учиться новому.
                 </p>
-            </td>
-        </tr>
-    </table>
 
-    <hr/>
+                <h4>Мои социальные сети</h4>
+                    <div class="social-sub">
+                        <a href="https://vk.com/tomatnoe_251416" target="_blank">ВК</a>
+                        |
+                        <a href="https://www.instagram.com/tomato4e/" target="_blank">Инстаграм</a>
+                    </div>
+            </div>
+        </div>
 
-    <h1>Мои социальные сети</h1>
-    <ul type="disk">
-        <li><a href="https://vk.com/tomatnoe_251416" target="_blank">ВК</a></li>
-        <li><a href="https://www.instagram.com/tomato4e/" target="_blank">Инстаграм</a></li>
-    </ul>
+        <div class="card">
+            <h2>Мои хобби</h2>
+            <ol>
+                <li>Чтение худ. литературы</li>
+                <li>Написание музыки</li>
+                <li>Спорт</li>
+            </ol>
+        </div>
 
-    <hr />
+        <div class="card">
+            <h2>Моё музыкальное творчество</h2>
+            <a href="https://soundcloud.com/f6oks?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SoundCloud</a>
+        </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Чтение худ. литературы</li>
-        <li>Написание музыки</li>
-        <li>Спорт</li>
-    </ol>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="feedback_name">Ваше имя:</label>
+                        <input type="text" id="feedback_name" placeholder="Иванов Иван">
+                    </div>
+                    
+                    <div class="form-group"> 
+                        <label for="Email">Ваш Email:</label>
+                        <input type="email" id="Email" placeholder="ivan@gmail.ru">
+                    </div>
+                </div>
 
-    <hr />
-
-    <h2>Моё музыкальное творчество</h2>
-    <a href="https://soundcloud.com/f6oks?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SoundCloud</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-        <label for="feedback_name">Ваше имя:</label>
-        <input type="text" id="feedback_name" placeholder="Иванов Иван">
-
-        <br/>
-
-        <label for="Email">Ваш Email:</label>
-        <input type="email" id="Email" placeholder="ivan@gmail.ru">
-
-        <br/>
-
-        <label for="message">Ваше сообщение:</label>
-        <br/>
-        <textarea id="message" rows="3" cols="20"></textarea>
-        
-        <br/>
-        
-        <input type="submit" value="Связаться!">
-    </form>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" rows="3" cols="20" class="message-area"></textarea>
+                </div>
+                
+                <input type="submit" value="Связаться!" class="feedback-button">
+            </form>
+        </div>
 </body>
 </html>

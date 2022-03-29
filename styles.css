@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #d0dada;
+    color: #0f141e;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #3b3b52;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+a:active {
+    color: red;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.info-text {
+    margin-left: 20px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 14px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.social-sub {
+    background-color: #cacaca;
+    width: 120px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #b0c0c0;
+    padding: 1px 20px 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: #3b3b52;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #a1a1a1;
+    color: #000;
+    padding: 15px 0px 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.feedback-button {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+
+    font-size: 20px;
+    font-weight: normal;
+    font-family: inherit;
+}
+
+.feedback-button:hover {
+    opacity: 0.9;
+}
